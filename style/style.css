@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .attribution {
   display: none;
 }
@@ -17,7 +23,6 @@
   max-width: 1120px;
   height: 600px;
   margin-top: 112px;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
 }
@@ -31,9 +36,49 @@
   width: 100%;
   height: 100%;
 }
+.container .result-box .info-box .info-for-users .users-info-header {
+  font-size: 45px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4e1a4b;
+  line-height: 48px;
+  letter-spacing: -3.5px;
+  margin: 0;
+}
+.container .result-box .info-box .info-for-users .header-info {
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #90848e;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  margin-top: 24px;
+}
 .container .result-box .info-box .info-fame {
   width: 100%;
   height: 100%;
+}
+.container .result-box .info-box .info-fame .fame-wrapper .fame-box {
+  width: 450px;
+  height: 60px;
+  color: #541a4d;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f2f8;
+  list-style: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .result-box .info-box .info-fame .fame-wrapper .fame-box .fame-reviews {
+  margin-left: 32px;
+}
+.container .result-box .info-box .info-fame .fame-wrapper .fame-box-centre {
+  margin-left: 50px;
+}
+.container .result-box .info-box .info-fame .fame-wrapper .fame-box-right {
+  margin-left: 97px;
 }
 .container .result-box .box-wrapper {
   width: 100%;
@@ -45,4 +90,38 @@
 .container .result-box .box-wrapper .box {
   width: 350px;
   height: 235px;
+  background-color: #511f50;
+  color: #fff5ff;
+  border-radius: 10px;
+}
+.container .result-box .box-wrapper .box .image-and-text {
+  margin-top: 40px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.container .result-box .box-wrapper .box .image-and-text img {
+  border-radius: 50%;
+}
+.container .result-box .box-wrapper .box .image-and-text .name-of-buyer {
+  margin-left: 25px;
+}
+.container .result-box .box-wrapper .box .image-and-text .name-of-buyer .buyer-name {
+  font-weight: bold;
+  color: #fff;
+}
+.container .result-box .box-wrapper .box .image-and-text .name-of-buyer .buyer-title {
+  color: #d668a5;
+}
+.container .result-box .box-wrapper .box .buyer-review-text {
+  margin-left: 32px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+.container .result-box .box-wrapper .box-centre {
+  margin-top: 18px;
+}
+.container .result-box .box-wrapper .box-right {
+  margin-top: 32px;
 }/*# sourceMappingURL=style.css.map */
