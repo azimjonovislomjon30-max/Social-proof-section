@@ -35,6 +35,7 @@
         height: 100%;
 
         .users-info-header{
+          width: 332px;
           font-size: 45px;
           font-weight: 800;
           font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +45,7 @@
           margin: 0;
         }
         .header-info{
+          width: 420px;
           font-weight: 400;
           font-family: sans-serif;
           color: #90848e;
@@ -86,11 +88,11 @@
       }
     }
     .box-wrapper{
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
       .box{
         width: 350px;
@@ -122,17 +124,292 @@
           }
         }
         .buyer-review-text{
+          width: 290px;
           margin-left: 32px;
           line-height: 20px;
           letter-spacing: 0.5px;
         }
-       }
-       .box-centre{
+      }
+      .box-centre{
         margin-top: 18px;
-       }
-       .box-right{
+      }
+      .box-right{
         margin-top: 32px;
-       }
+      }
+    }
+  }
+}
+
+// media
+
+@media screen and (max-width: 1060px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-fame{
+          .fame-wrapper{
+            .fame-box-centre{
+              margin-left: 0px;
+            }
+            .fame-box-right{
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      .box-wrapper{
+        display: flex;
+        flex-direction: row;
+        .box{
+          width: 330px;
+          height: 225px;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-fame{
+          .fame-wrapper{
+            .fame-box-centre{
+              margin-left: 0px;
+            }
+            .fame-box-right{
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      .box-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .box-right{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-for-users{
+          .header-info{
+            font-size: 14px;
+            width: 355px;
+          }
+        }
+        .info-fame{
+          .fame-wrapper{
+            .fame-box-centre{
+              margin-left: 0px;
+            }
+            .fame-box-right{
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-for-users{
+          .users-info-header{
+            font-weight: 700;
+          }
+          .header-info{
+            font-size: 14px;
+            width: 300px;
+          }
+        }
+        .info-fame{
+          .fame-wrapper{
+            .fame-box-centre{
+              margin-left: 0px;
+            }
+            .fame-box-right{
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-fame{
+          .fame-wrapper{
+            .fame-box{
+              width: 325px;
+              height: 78px;
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-fame{
+          .fame-wrapper{
+            .fame-box{
+              width: 280px;
+              .fame-reviews{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 660px){
+  .container{
+    .result-box{
+      .box-wrapper{
+        .box{
+          width: 300px;
+          .buyer-review-text{
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .container{
+    width: 100%;
+    height: 1530px;
+
+    .result-box{
+      width: 455px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      .info-box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info-for-users{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 50px;
+
+          .users-info-header{
+            width: 332px;
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 48px;
+          }
+          .header-info{
+            width: 390px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.1px;
+            margin-top: 24px;
+          }
+        }
+        .info-fame{
+          width: 100%;
+          height: 100%;
+
+          .fame-wrapper{
+            .fame-box{
+              width: 450px;
+              height: 60px;
+              margin-bottom: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .fame-reviews{
+                margin-left: 32px;
+              }
+            }
+          }
+
+        }
+      }
+      .box-wrapper{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        .box{
+          width: 350px;
+          height: 235px;
+
+          .image-and-text{
+            margin-top: 40px;
+            margin-left: 32px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+          }
+          .buyer-review-text{
+            width: 290px;
+            margin-left: 32px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+          }
+        }
+        .box-centre{
+          margin-top: 18px;
+        }
+        .box-right{
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px){
+  .container{
+    .result-box{
+      .info-box{
+        .info-fame{
+          .fame-wrapper{
+            .fame-box{
+              width: 330px;
+              height: 78px;
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
     }
   }
 }
