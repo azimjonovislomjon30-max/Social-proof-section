@@ -8,7 +8,20 @@
   display: none;
 }
 
+:focus {
+  outline-color: orange;
+  outline-offset: 3px;
+  outline-width: 2px;
+  outline-style: dotted;
+}
+
 .container {
+  position: absolute;
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 550px;
+  background-attachment: fixed;
   width: 100%;
   max-width: 1440px;
   height: 800px;
@@ -127,6 +140,14 @@
 }
 .container .result-box .box-wrapper .box-right {
   margin-top: 32px;
+}
+.container .bottom-img {
+  position: absolute;
+  width: 100%;
+  max-width: 850px;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1060px) {
@@ -317,6 +338,12 @@
 }
 @media screen and (max-width: 375px) {
   .container {
+    position: absolute;
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 375px;
+    background-attachment: fixed;
     padding: 25px;
   }
   .container .result-box {
